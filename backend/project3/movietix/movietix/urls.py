@@ -23,5 +23,5 @@ urlpatterns = [
     path('', include('accounts.urls')),
 
     #path('', include('api.urls')),
-]
+]   
 
