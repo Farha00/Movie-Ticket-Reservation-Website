@@ -13,31 +13,34 @@
   flex-direction: column;
 }
 
+
 @media screen and (min-width: 600px) {
   .auth-form-container{
-    padding: 5rem ;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 0.5rem;
+    /*padding: 10rem ;
+    margin: 0.5rem;*/
   } 
 }
 
+
 label{
   text-align: left;
-  padding: 0.25rem 0;
+  margin: 0.5rem ;
+  padding: 0rem 0;
 }
 
 input {
-  margin: 0.5rem 0;
-  padding: 1rem;
+  margin: 0.5rem ;
+  padding: 0.5rem;
   border: none;
   border-radius: 10px;
 }
 
+
 button{
   border: none;
-  background-color: rgb(60, 38, 201);
-  padding: 20px;
+  margin: 0.5rem ;
+  background-color: rgb(6, 126, 78);
+  padding: 10px;
   border-radius: 10px;
   cursor: pointer;
   color: white;
