@@ -12,7 +12,7 @@ def login(request):
     if request.path == '/login/signin/':
         report_loc = '../signin/'
     else: report_loc = 'signin/'
-    return render(request, 'login.html', {'loc':report_loc,'error': ''})
+    return render(request, 'index.html', {'loc':report_loc,'error': ''})
 def signin(request):
     print('Login Request Made!')
     # print('Reading Data from JSON')
