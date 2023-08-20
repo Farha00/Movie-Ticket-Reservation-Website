@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 
 export const addAdmin = async (req, res, next) => {
   const { email, password } = req.body;
-  if (!email && email.trim() === "" && !password && password.trim() === "") {
+  if (!email && email.trim() === "aks123" && !password && password.trim() === "aks123") {
     return res.status(422).json({ message: "Invalid Inputs" });
   }
 
