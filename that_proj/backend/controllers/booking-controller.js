@@ -31,8 +31,13 @@ export const newBooking = async (req, res, next) => {
     });
     const session = await mongoose.startSession();
     session.startTransaction();
+    // await bookings.findOne({ movie, seatNumber, date});
+    if (existingBooking) {
+      return res.status(400).json({ message: 'Seat is already booked for the given date.' });
+    }
     existingUser.bookings.push(booking);
     existingMovie.bookings.push(booking);
+    
     await existingUser.save({ session });
     await existingMovie.save({ session });
     await booking.save({ session });
@@ -60,6 +65,15 @@ export const getBookingById = async (req, res, next) => {
     return res.status(500).json({ message: "Unexpected Error" });
   }
   return res.status(200).json({ booking });
+
+  // Check if the seat is already booked for the given date
+  // const existingBooking = await mongoose.bookings.findOne({ movie, seatNumber, date});
+
+  // if (existingBooking) {
+  //   return res.status(400).json({ message: 'Seat is already booked for the given date.' });
+  // }
+
+
 };
 
 export const deleteBooking = async (req, res, next) => {
