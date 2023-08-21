@@ -34,7 +34,7 @@ function App() {
   }, [])
 
   return (
-    <div>
+    <div style={{ backgroundColor: 'black', minHeight: '100vh' }}>
       <Header />
       <section>
         <Routes>

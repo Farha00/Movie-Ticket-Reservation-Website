@@ -15,19 +15,19 @@ const HomePage = () => {
   // console.log(movies);
 
   return (
-    <Box width={"100%"} height={"100vh"} marginTop={2} margin={"auto"}  >
+    <Box  width={"100%"} height={"100vh"} marginTop={2} margin={"auto"}  >
 
 
       <Carousel />
 
       <Box padding={5} margin="auto" >
-        <Typography variant="h4" textAlign={"center"}>Latest Releases</Typography>
+        <Typography color={'black'} variant="h4" textAlign={"center"}>Latest Releases</Typography>
       </Box>
 
       {/* render All movie cards */}
-      <Box gap={3} margin="auto" width="80%" flexWrap={"wrap"} display="flex" justifyContent={"center"}  >
+      <Box  gap={2} margin="auto" width="85%" flexWrap={"wrap"} display="flex" justifyContent={"center"}  >
         {
-          movies && movies.slice(0,4).map((movie,index) => (
+          movies && movies.slice(0,3).map((movie,index) => (
             <MovieItem id={movie._id} title={movie.title} posterUrl={movie.posterUrl} releaseDate={movie.releaseDate} key={index}/>
           ))
         }

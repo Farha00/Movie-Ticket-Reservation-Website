@@ -5,7 +5,7 @@ import { getAllMovies } from '../api-helpers/apiHelpers';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { adminActions, userActions } from '../store';
-import logo from '../logo.jpg'
+import logo from '../logo.png'
 
 const Header = () => {
 
@@ -49,7 +49,7 @@ const Header = () => {
 
     return (
         <div>
-            <AppBar position='sticky' sx={{ bgcolor: "#2b2d42" }} >
+            <AppBar position='sticky' sx={{ bgcolor: "#440DF5" }} >
                 <Toolbar>
                     <Box width={"20%"} >
                         <IconButton LinkComponent={Link} to="/" >

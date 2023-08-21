@@ -19,7 +19,7 @@ const Movies = () => {
     <movieState.Provider value={movies}>
 
       <Box margin={"auto"} marginTop={4} >
-        <Typography variant='h4' margin={"auto"} padding={2} width={"40%"} bgcolor={"#900C3F"} color={"white"} textAlign={"center"}>
+        <Typography variant='h4' margin={"auto"} padding={2} width={"40%"} color={"white3"} textAlign={"center"}>
           All Movies
         </Typography>
 
