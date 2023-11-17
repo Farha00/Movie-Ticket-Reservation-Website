@@ -33,7 +33,7 @@ const AddMovie = () => {
     }
 
     return (
-        <div>
+        <div style={{ backgroundColor: 'white', minHeight: '100vh' }}>
             <form onSubmit={handleSubmit} >
                 <Box width={'50%'} padding={10} margin={"auto"} display={'flex'} flexDirection={'column'} boxShadow={"10px 10px 20px #ccc"} >
 

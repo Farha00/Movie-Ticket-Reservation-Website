@@ -60,7 +60,7 @@ const Booking = () => {
                             </Box>
                         </Box>
 
-                        <Box width={"50%"} paddingTop={3}  >
+                        <Box color={'white'} width={"50%"} paddingTop={3}  >
 
                             <img src={logo} alt=""  height={"350px"} width={"700px"} />
 
