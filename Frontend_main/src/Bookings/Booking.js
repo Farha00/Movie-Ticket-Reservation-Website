@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import logo from '../tictketbookinglogo.png'
 
 const Booking = () => {
+    //commented
 
     const [movie, setMovie] = useState();
     const [inputs, setInputs] = useState({ seatNumber: "", date: "" });
