@@ -44,13 +44,13 @@ const AdminProfile = () => {
               width={"auto"}
               textAlign={"center"}
               border={"1px solid #ccc"}
-              borderRadius={6}
-            >
+              // borderRadius="6px"
+                          >
               Email: {admin.email}
             </Typography>
           </Box>
         )}
-
+        console.log(admin.addMovie);
         {admin && admin.addMovie.length > 0 && (
 
           <Box width={"70%"} display="flex" flexDirection={"column"}>
